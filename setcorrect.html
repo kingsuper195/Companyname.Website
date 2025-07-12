@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CompanyName.Website</title>
+    <style>
+        @font-face {
+            font-family: "xkcd";
+            src: url("xkcd-script.ttf");
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            text-align: center;
+            font-family: "xkcd";
+            background-color: grey;
+        }
+
+        #cnw {
+            font-size: xx-large;
+            margin-bottom: -50px;
+        }
+
+        #wsic {
+            font-size: x-large;
+            background-color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-style: italic;
+            position: sticky;
+        }
+
+        #cn {
+            color: white;
+        }
+
+        #w {
+            color: grey;
+        }
+
+        #content {
+            background-color: black;
+            width: 100%;
+            padding-bottom: 5px;
+            z-index: unset;
+            position: relative;
+            font-variant: small-caps;
+            margin: auto;
+        }
+
+        #circle {
+            scale: 300%;
+            position: relative;
+            -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+            filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+            top: 92px;
+        }
+
+        #apa {
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+
+        .addpages {
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 id="cnw"><i><span id="cn">CompanyName</span><span id="w">.Website</span></i></h1>
+        <img id="circle" src="circle.svg">
+        <p id="wsic">If you're reading this, the web<br> server was installed correctly.™</p>
+        <p class="addpages" id="apa">If you are an admin, you can now add pages!</p>
+        <p class="addpages">If you are a user, please <a href="index.html">contact</a> the admin and request that they add pages.</p>
+
+    </div>
+</body>
+
+</html>
