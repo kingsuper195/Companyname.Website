@@ -9,7 +9,10 @@
             src: url("xkcd-script.ttf");
         }
 
+        html,
         body {
+            padding: 0;
+            margin: 0;
             text-align: center;
             font-family: "xkcd";
         }
@@ -35,12 +38,33 @@
             margin: 0;
             font-style: italic;
         }
+
+        nav {
+            min-width: 100%;
+            background-color: #bfbfbf;
+            height: 4em;
+        }
+
+        a {
+            background-color: #bfbfbf;
+            padding: 3px;
+            color: inherit;
+            text-decoration: inherit;
+            height: 4em;
+            font-size: 2.8em;
+        }
+
+        a:hover {
+            background-color: #aaa;
+        }
     </style>
 </head>
 
 <body>
+    <nav><a href="index.html">Main</a><a href="setcorrect.html">Web Server Home</a><a href="QnA.html">Q&A</a><a href="credits.html">Credits</a></nav>
     <h1>Welcome to CompanyName.Website</h1>
-    <p class="quote">Here at CompanyName.website, our three main strengths are our web-facing chairs, our huge collection of white
+    <p class="quote">Here at CompanyName.website, our three main strengths are our web-facing chairs, our huge
+        collection of white
         papers, and the fact that we physically cannot die.</p>
     <h2>Our Team:</h2>
     <div id="members">
